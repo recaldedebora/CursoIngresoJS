@@ -1,7 +1,23 @@
 function mostrar()
 {
 
-	alert("ok");
+	{
+		let numero;
+		let contador = 0;
 
+	numero = parseInt(prompt("Ingrese un número"));
 
-}//FIN DE LA FUNCIÓN
+	while(isNaN(numero)){
+	numero = parseInt(prompt("Eso no es un número"));
+}
+		
+		for (let i =1; i < numero;i++ ){
+			if( numero % i == 0){
+				console.log(i);
+				contador++;
+			}
+			console.log("catidad de divisores encontrados " + contador);
+		}
+		
+	}
+}
